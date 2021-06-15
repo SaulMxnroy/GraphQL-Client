@@ -1,0 +1,26 @@
+<div class="container col-md-6" >
+    <div class="card">
+        <div class="card-header">
+            <h3>Add a new User</h3> 
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="" >First Name:</label>
+                <input type="text" class="form-control" style="margin-left: 10px;" [(ngModel)]="user.firstName">
+            </div>
+            <div class="form-group">
+                <label for=""style="margin-top: 10px;">Last Name:</label>
+                <input type="text" class="form-control" style="margin-left: 10px;" [(ngModel)]="user.lastName">
+            </div>
+            <div class="form-group">
+                <label for=""style="margin-top: 10px;">email:</label>
+                <input type="text" name="email" class="form-control" style="margin-left: 10px;" [(ngModel)]="user.email">
+            </div>
+            <div class="form-group">
+                <label for=""style="margin-top: 10px;">Create a password:</label>
+                <input type="password" class="form-control" style="margin-left: 10px;" [(ngModel)]="user.password">
+            </div>
+            <button (click)="Save()" class="btn btn-danger" style="margin-top: 10px;">Save</button>
+        </div>
+    </div>
+</div>
